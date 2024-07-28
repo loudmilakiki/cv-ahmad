@@ -80,12 +80,12 @@ ul, ul {
     }
 
     .skills-list,
-    .lunguage-list {
+    .language-list {
         padding-left: 16px;
     }
 
     .skills-list-item,
-    .lunguage-list-item {
+    .language-list-item {
         color: #161D2A;
         font-size: 14px;
         font-weight: 400;
@@ -191,3 +191,106 @@ line-height: 24px;
     padding-left: 18px;
 }
 
+.link {
+    font-weight: 700;
+}
+
+   
+
+        .text-brand-secondary a {
+            color: #ff5722;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .text-brand-secondary a:hover {
+            color: #ff784e;
+        }
+
+        .modal {
+            display: none; /* Скрыто по умолчанию */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 800px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .close {
+            color: red;
+            float: right;
+            font-size: 40px;
+            font-weight: bold;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            cursor: pointer;
+            transition: color 0.3s;
+            z-index: 1;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-image {
+            width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .modal-image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: #595959;
+            font-weight: bold;
+            font-size: 35px;
+            transition: 0.3s ease;
+            user-select: none;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
