@@ -222,7 +222,7 @@ line-height: 24px;
 
         .modal-content {
             background-color: #fefefe;
-            margin: 15% auto;
+            margin: 50px auto;
             padding: 20px;
             border: 1px solid #888;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -248,7 +248,7 @@ line-height: 24px;
 
         .close:hover,
         .close:focus {
-            color: #000;
+            color: #595959;
             text-decoration: none;
             cursor: pointer;
         }
