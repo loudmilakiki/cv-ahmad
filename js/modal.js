@@ -1,6 +1,6 @@
 // JavaScript for handling modal behavior
 
-// Function to open Mobily modal
+// Function to open Mobily modal/////////////////////////////////////////////////////////////////////
 function openMobily() {
     document.getElementById('mobily').style.display = 'block';
     showMobilySlide(currentMobilyIndex); // Show the first image
@@ -34,6 +34,8 @@ function showMobilySlide(index) {
 function changeMobilySlide(step) {
     showMobilySlide(currentMobilyIndex + step);
 }
+
+//tower///////////////////////////////////////////////////////////////////////////////////////////////
 
 // Function to open Tower modal
 function openTower() {
@@ -69,30 +71,24 @@ function changeTowerSlide(step) {
     showTowerSlide(currentTowerIndex + step);
 }
 
-// Initialize display
-document.addEventListener('DOMContentLoaded', () => {
-    showMobilySlide(currentMobilyIndex);
-    showTowerSlide(currentTowerIndex);
-});
 
 
-// pearl
 
-// Function to open Tower modal
+
+// pearl///////////////////////////////////////////////////////////////////
+
+
 function openPearl() {
     document.getElementById('pearl').style.display = 'block';
-    showTowerSlide(currentPearlIndex); // Show the first image
+    showPearlSlide(currentPearlIndex); // Show the first image
 }
 
-// Function to close Tower modal
 function closePearl() {
     document.getElementById('pearl').style.display = 'none';
 }
 
-// Tower Slide Index
 let currentPearlIndex = 0;
 
-// Function to show specific Tower slide
 function showPearlSlide(index) {
     const pearlImages = document.querySelectorAll('#pearl .modal-image');
     if (index >= pearlImages.length) {
@@ -103,18 +99,108 @@ function showPearlSlide(index) {
         currentPearlIndex = index;
     }
 
-    // Hide all images and show the selected one
     pearlImages.forEach((img, idx) => img.style.display = idx === currentPearlIndex ? 'block' : 'none');
 }
 
-// Function to change Tower slide
 function changePearlSlide(step) {
     showPearlSlide(currentPearlIndex + step);
 }
 
-// Initialize display
+
+ //arwa //////////////////////////////////////////////////////////////////
+
+ function openArwa() {
+    document.getElementById('arwa').style.display = 'block';
+    showArwaSlide(currentArwaIndex); // Show the first image
+}
+
+function closeArwa() {
+    document.getElementById('arwa').style.display = 'none';
+}
+
+let currentArwaIndex = 0;
+
+function showArwaSlide(index) {
+    const arwaImages = document.querySelectorAll('#arwa .modal-image');
+    if (index >= arwaImages.length) {
+        currentArwaIndex = 0;
+    } else if (index < 0) {
+        currentArwaIndex = arwaImages.length - 1;
+    } else {
+        currentArwaIndex = index;
+    }
+
+    arwaImages.forEach((img, idx) => img.style.display = idx === currentArwaIndex ? 'block' : 'none');
+}
+
+function changeArwaSlide(step) {
+    showArwaSlide(currentArwaIndex + step);
+}
+
+//tower-m//////////////////////////////////////////////////////////////////
+
+function openTowerm() {
+    document.getElementById('towerm').style.display = 'block';
+    showTowermSlide(currentTowermIndex); // Show the first image
+}
+
+function closeTowerm() {
+    document.getElementById('towerm').style.display = 'none';
+}
+
+let currentTowermIndex = 0;
+
+function showTowermSlide(index) {
+    const towermImages = document.querySelectorAll('#towerm .modal-image');
+    if (index >= towermImages.length) {
+        currentTowermIndex = 0;
+    } else if (index < 0) {
+        currentTowermIndex = arwaImages.length - 1;
+    } else {
+        currentTowermIndex = index;
+    }
+
+    towermImages.forEach((img, idx) => img.style.display = idx === currentTowermIndex ? 'block' : 'none');
+}
+
+function changeTowermSlide(step) {
+    showTowermSlide(currentTowermIndex + step);
+}
+
+//alarab///////////////////////////////////////////////
+
+function openAlarab() {
+    document.getElementById('alarab').style.display = 'block';
+    showAlarabSlide(currentAlarabIndex); // Show the first image
+}
+
+function closeAlarab() {
+    document.getElementById('alarab').style.display = 'none';
+}
+
+let currentAlarabIndex = 0;
+
+function showAlarabSlide(index) {
+    const alarabImages = document.querySelectorAll('#alarab .modal-image');
+    if (index >= alarabImages.length) {
+        currentAlarabIndex = 0;
+    } else if (index < 0) {
+        currentAlarabIndex = alarabImages.length - 1;
+    } else {
+        currentAlarabIndex = index;
+    }
+
+    alarabImages.forEach((img, idx) => img.style.display = idx === currentAlarabIndex ? 'block' : 'none');
+}
+
+function changeAlarabSlide(step) {
+    showAlarabSlide(currentAlarabIndex + step);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     showMobilySlide(currentMobilyIndex);
     showTowerSlide(currentTowerIndex);
     showPearlSlide(currentPearlIndex);
+    showArwaSlide(currentArwaIndex);
+    showTowermSlide(currentTowermIndex);
 });

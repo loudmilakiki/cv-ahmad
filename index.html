@@ -180,7 +180,7 @@
                         Project Electrical Engineer – West Bay Doha
                         <br>
                         Arwa Tower 2 Basement + Ground + 25 Floors
-                        Owner: <span class="text-brand-secondary">Prince Faisal Al Tani</span>
+                        Owner: <span class="text-brand-secondary"><a href="javascript:void(0);" onclick="openArwa()">Prince Faisal Al Tani</a></span>
                         <br>
                         Consultant: Diwan Architects Engineers & Planners
                         <br>
@@ -209,7 +209,7 @@
                         <br>
                         Parcel 10A & 11B- P4+G+21 Floors each
                         <br>
-                        Owner: <span>Al Arrab </span>
+                        Owner: <span class="text-brand-secondary"><a href="javascript:void(0);" onclick="openAlarab()">Al Arrab</a></span>
                         <br>
                         Consultant: Dar Al-Handasah Consultants - www.dargroup.com
                         <br>
@@ -228,7 +228,7 @@
                         <br>
                         Location: Waste Bay Doha
                         <br>
-                        Owner: Sheikh Muhammad Bin Suhaim Al Tani
+                        Owner: <span class="text-brand-secondary"><a href="javascript:void(0);" onclick="openTowerm()">Sheikh Muhammad Bin Suhaim Al Tani</a></span>
                         <br>
                         Consultant: MZ & Partner</span>
 
@@ -272,7 +272,7 @@
         </div>
 
         <aside class="sidebar">
-            <img src="image/photo-ahmad.png" alt="My photo" width="300">
+            <img src="image/ahmad.png" alt="My photo" width="300">
             <div class="sidebar-content">
 
                 <div class="contacts-conteiner">
@@ -344,9 +344,50 @@
                 <span class="close" onclick="closePearl()">&times;</span>
                 <div class="modal-image-container">
                     <img class="modal-image" src="image/pearl1.png" alt="Pearl">
+                    <img class="modal-image" src="image/pearl2.png" alt="Pearl">
+                    <img class="modal-image" src="image/pearl6.png" alt="Pearl">
                     <!-- Кнопки переключения изображений -->
                     <a class="prev" onclick="changePearlSlide(-1)">&#10094;</a>
                     <a class="next" onclick="changePearlSlide(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="arwa" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeArwa()">&times;</span>
+                <div class="modal-image-container">
+                    <img class="modal-image" src="image/arwa1.png" alt="Arwa">
+                   
+                    <!-- Кнопки переключения изображений -->
+                    <a class="prev" onclick="changeArwaSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeArwaSlide(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="towerm" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeTowerm()">&times;</span>
+                <div class="modal-image-container">
+                    <img class="modal-image" src="image/tower-m.png" alt="Arwa">
+                   
+                    <!-- Кнопки переключения изображений -->
+                    <a class="prev" onclick="changeTowermSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeTowermSlide(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="alarab" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeAlarab()">&times;</span>
+                <div class="modal-image-container">
+                    <img class="modal-image" src="image/alarab.png" alt="Arwa">
+                   
+                    <!-- Кнопки переключения изображений -->
+                    <a class="prev" onclick="changeAlarabSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeAlarabSlide(1)">&#10095;</a>
                 </div>
             </div>
         </div>
