@@ -93,6 +93,26 @@
                     Head of Technical Electrical Department
                 </p>
 
+                <p class="work-profile-text">	
+                    <span class="text-brand-primary">
+                        Melia Residential Building - Senegal
+                    <br>
+                	<span class="text-brand-secondary-light"><a href="javascript:void(0);" onclick="openLaguna()">Laguna Bay</a></span> – Abidjan
+                    <br>
+                    Baobab Hotel – Abidjan
+                    <br>
+                	Novotel Adagio Hotel – Abidjan
+                    <br>
+                	Base Logistic – Abidjan
+                    <br>
+                	Private Villas – Abidjan
+                    <br>
+                	Villa Karim – Abidjan
+                    <br>
+                	<span class="text-brand-secondary-light"><a href="javascript:void(0);" onclick="openAbatta()">Abatta Village</a></span> - Abidjan
+                    </span>
+                </p>
+
                 <p class="work-profile-text">
                     Tenure: Aug 2016 Till Feb 2020
                     </br>
@@ -120,7 +140,7 @@
                         KSA – Jubeil , Eastern Province</span>
                 </p>
 
-                <p class="work-profile-text ">
+                <p class="work-profile-text">
                     <span class="text-brand-primary">
                         MCC- Musharabia Contracting Company
                         </br>
@@ -128,7 +148,7 @@
                         <br>
                         Dahran Modern Center
                         <br>
-                        Owner: Al Hugeyt Group
+                        Owner: <span class="text-brand-secondary"><a href="javascript:void(0);" onclick="openDahran()">Al Hugeyt Group</a></span>
                         <br>
                         Consultant: Samir Khairallah & Partners
                         <br>
@@ -180,6 +200,7 @@
                         Project Electrical Engineer – West Bay Doha
                         <br>
                         Arwa Tower 2 Basement + Ground + 25 Floors
+                        <br>
                         Owner: <span class="text-brand-secondary"><a href="javascript:void(0);" onclick="openArwa()">Prince Faisal Al Tani</a></span>
                         <br>
                         Consultant: Diwan Architects Engineers & Planners
@@ -209,7 +230,7 @@
                         <br>
                         Parcel 10A & 11B- P4+G+21 Floors each
                         <br>
-                        Owner: <span class="text-brand-secondary"><a href="javascript:void(0);" onclick="openAlarab()">Al Arrab</a></span>
+                        Owner: <span class="text-brand-secondary">Al Arab</span>
                         <br>
                         Consultant: Dar Al-Handasah Consultants - www.dargroup.com
                         <br>
@@ -259,12 +280,18 @@
                             <br>
                             <a class="link" href="https://snu.edu.ua/index.php/en/home-english/" target="blank">East Ukraine Volodymyr Dal. National University</a>
                         </li>
+                        
+                        
                         <li class="work-education-item">
                             - 1999-2003 Bachelor of Electric Power Engineering
                             National Technical University of Ukraine <a class="link" href="https://kpi.ua/en/" target="_blank">KPI</a>
                         </li>
                         <li class="work-education-item">
                             - 1998 Technical Baccalaureate –BT. Ministry of Education – Lebanon.
+                        </li>
+
+                        <li>
+                            <span class="text-brand-secondary-light"><a href="javascript:void(0);" onclick="openDiploma()">Diploma</a></span>
                         </li>
                     </ul>
                 </div>
@@ -308,8 +335,8 @@
 
 
 <!-- Модальное окно Mobily -->
-<div id="mobily" class="modal">
-    <div class="modal-content">
+      <div id="mobily" class="modal">
+       <div class="modal-content">
         <span class="close" onclick="closeMobily()">&times;</span>
         <div class="modal-image-container">
             <img class="modal-image" src="image/mobily.png" alt="Mobily">
@@ -317,14 +344,10 @@
             <a class="prev" onclick="changeMobilySlide(-1)">&#10094;</a>
             <a class="next" onclick="changeMobilySlide(1)">&#10095;</a>
         </div>
-    </div>
-</div>
+       </div>
+      </div>
 
-<!-- Кнопка для открытия модального окна Tower -->
-
-
-<!-- Модальное окно Tower -->
-<div id="tower" class="modal">
+       <div id="tower" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeTower()">&times;</span>
         <div class="modal-image-container">
@@ -379,15 +402,55 @@
             </div>
         </div>
 
-        <div id="alarab" class="modal">
+        <div id="dahran" class="modal">
             <div class="modal-content">
-                <span class="close" onclick="closeAlarab()">&times;</span>
+                <span class="close" onclick="closeDahran()">&times;</span>
                 <div class="modal-image-container">
-                    <img class="modal-image" src="image/alarab.png" alt="Arwa">
+                    <img class="modal-image" src="image/dahran.png" alt="Dahran">
                    
                     <!-- Кнопки переключения изображений -->
-                    <a class="prev" onclick="changeAlarabSlide(-1)">&#10094;</a>
-                    <a class="next" onclick="changeAlarabSlide(1)">&#10095;</a>
+                    <a class="prev" onclick="changeDahranbSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeDahranSlide(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="diploma" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeDiploma()">&times;</span>
+                <div class="modal-image-container">
+                    <img class="modal-image" src="image/diploma1.png" alt="Diploma">
+                    <img class="modal-image" src="image/diploma2.png" alt="Diploma">
+                    <img class="modal-image" src="image/diploma3.png" alt="Diploma">
+                    <!-- Кнопки переключения изображений -->
+                    <a class="prev" onclick="changeDiplomaSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeDiplomaSlide(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="laguna" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeLaguna()">&times;</span>
+                <div class="modal-image-container">
+                    <img class="modal-image" src="image/laguna1.png" alt="Laguna">
+                    <img class="modal-image" src="image/laguna2.png" alt="Laguna">
+                    <img class="modal-image" src="image/laguna3.png" alt="Laguna">
+                    <img class="modal-image" src="image/laguna4.png" alt="Laguna">
+                    <a class="prev" onclick="changeLagunaSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeLagunaSlide(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="abatta" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeAbatta()">&times;</span>
+                <div class="modal-image-container">
+                    <img class="modal-image" src="image/abatta1.png" alt="Abatta">
+                    <img class="modal-image" src="image/abatta3.png" alt="Abatta">
+                    <a class="prev" onclick="changeAbattaSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeAbattaSlide(1)">&#10095;</a>
                 </div>
             </div>
         </div>

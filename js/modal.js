@@ -167,35 +167,126 @@ function changeTowermSlide(step) {
     showTowermSlide(currentTowermIndex + step);
 }
 
-//alarab///////////////////////////////////////////////
+//dahran///////////////////////////////////////////////
 
-function openAlarab() {
-    document.getElementById('alarab').style.display = 'block';
-    showAlarabSlide(currentAlarabIndex); // Show the first image
+function openDiploma() {
+    document.getElementById('diploma').style.display = 'block';
+    showDiplomaSlide(currentDiplomaIndex); // Show the first image
 }
 
-function closeAlarab() {
-    document.getElementById('alarab').style.display = 'none';
+function closeDiploma() {
+    document.getElementById('diploma').style.display = 'none';
 }
 
-let currentAlarabIndex = 0;
+let currentDiplomaIndex = 0;
 
-function showAlarabSlide(index) {
-    const alarabImages = document.querySelectorAll('#alarab .modal-image');
-    if (index >= alarabImages.length) {
-        currentAlarabIndex = 0;
+function showDiplomaSlide(index) {
+    const diplomaImages = document.querySelectorAll('#diploma .modal-image');
+    if (index >= diplomaImages.length) {
+        currentDiplomaIndex = 0;
     } else if (index < 0) {
-        currentAlarabIndex = alarabImages.length - 1;
+        currentDiplomaIndex = diplomaImages.length - 1;
     } else {
-        currentAlarabIndex = index;
+        currentDiplomaIndex = index;
     }
 
-    alarabImages.forEach((img, idx) => img.style.display = idx === currentAlarabIndex ? 'block' : 'none');
+    diplomaImages.forEach((img, idx) => img.style.display = idx === currentDiplomaIndex ? 'block' : 'none');
 }
 
-function changeAlarabSlide(step) {
-    showAlarabSlide(currentAlarabIndex + step);
+function changeDiplomaSlide(step) {
+    showDiplomaSlide(currentDiplomaIndex + step);
 }
+
+//diploma////////////////////////////////////////////////////////
+
+function openDahran() {
+    document.getElementById('dahran').style.display = 'block';
+    showDahranSlide(currentDahranIndex); // Show the first image
+}
+
+function closeDahran() {
+    document.getElementById('dahran').style.display = 'none';
+}
+
+let currentDahranIndex = 0;
+
+function showDahranSlide(index) {
+    const dahranImages = document.querySelectorAll('#dahran .modal-image');
+    if (index >= dahranImages.length) {
+        currentDahranIndex = 0;
+    } else if (index < 0) {
+        currentDahranIndex = dahranImages.length - 1;
+    } else {
+        currentDahranIndex = index;
+    }
+
+    dahranImages.forEach((img, idx) => img.style.display = idx === currentDahranIndex ? 'block' : 'none');
+}
+
+function changeDahranSlide(step) {
+    showDahranSlide(currentDahranIndex + step);
+}
+
+//laguna/////////////////////////////////////////////////////
+
+function openLaguna() {
+    document.getElementById('laguna').style.display = 'block';
+    showLagunaSlide(currentLagunaIndex); // Show the first image
+}
+
+function closeLaguna() {
+    document.getElementById('laguna').style.display = 'none';
+}
+
+let currentLagunaIndex = 0;
+
+function showLagunaSlide(index) {
+    const lagunaImages = document.querySelectorAll('#laguna .modal-image');
+    if (index >= lagunaImages.length) {
+        currentLagunaIndex = 0;
+    } else if (index < 0) {
+        currentLagunaIndex = lagunaImages.length - 1;
+    } else {
+        currentLagunaIndex = index;
+    }
+
+    lagunaImages.forEach((img, idx) => img.style.display = idx === currentLagunaIndex ? 'block' : 'none');
+}
+
+function changeLagunaSlide(step) {
+    showLagunaSlide(currentLagunaIndex + step);
+}
+
+//abatta/////////////////////////////////////////////////////////
+
+function openAbatta() {
+    document.getElementById('abatta').style.display = 'block';
+    showAbattaSlide(currentAbattaIndex); // Show the first image
+}
+
+function closeAbatta() {
+    document.getElementById('abatta').style.display = 'none';
+}
+
+let currentAbattaIndex = 0;
+
+function showAbattaSlide(index) {
+    const abattaImages = document.querySelectorAll('#abatta .modal-image');
+    if (index >= abattaImages.length) {
+        currentAbattaIndex = 0;
+    } else if (index < 0) {
+        currentAbattaIndex = abattaImages.length - 1;
+    } else {
+        currentAbattaIndex = index;
+    }
+
+    abattaImages.forEach((img, idx) => img.style.display = idx === currentAbattaIndex ? 'block' : 'none');
+}
+
+function changeAbattaSlide(step) {
+    showAbattaSlide(currentAbattaIndex + step);
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
     showMobilySlide(currentMobilyIndex);
@@ -203,4 +294,8 @@ document.addEventListener('DOMContentLoaded', () => {
     showPearlSlide(currentPearlIndex);
     showArwaSlide(currentArwaIndex);
     showTowermSlide(currentTowermIndex);
+    showDahranSlide(currentDahranIndex);
+    showDiplomaSlide(currentDiplomaIndex);
+    showLagunaSlide(currentLagunaIndex);
+    showAbattaSlide(currentAbattaIndex);
 });

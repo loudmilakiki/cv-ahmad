@@ -183,6 +183,7 @@ line-height: 24px;
     color: #595959;
 }
 
+
 .work-education-container {
     width: 560px;
 }
@@ -193,6 +194,7 @@ line-height: 24px;
 
 .link {
     font-weight: 700;
+    text-decoration: none;
 }
 
    
@@ -207,6 +209,20 @@ line-height: 24px;
         .text-brand-secondary a:hover {
             color: #ff784e;
         }
+
+        .text-brand-secondary-light a {
+            font-size: 16px;
+            font-weight: 700;
+            color: #ff5722;
+            text-decoration: none;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .text-brand-secondary-light a:hover {
+            color: #ff784e;
+        }
+        
 
         .modal {
             display: none; /* Скрыто по умолчанию */
