@@ -287,6 +287,35 @@ function changeAbattaSlide(step) {
     showAbattaSlide(currentAbattaIndex + step);
 }
 
+//novotel//////////////////////////////////////////////////////
+
+function openNovotel() {
+    document.getElementById('novotel').style.display = 'block';
+    showNovotelSlide(currentNovotelIndex); // Show the first image
+}
+
+function closeNovotel() {
+    document.getElementById('novotel').style.display = 'none';
+}
+
+let currentNovotelIndex = 0;
+
+function showNovotelSlide(index) {
+    const novotelImages = document.querySelectorAll('#novotel .modal-image');
+    if (index >= novotelImages.length) {
+        currentNovotelIndex = 0;
+    } else if (index < 0) {
+        currentNovotelIndex = novotelImages.length - 1;
+    } else {
+        currentNovotelIndex = index;
+    }
+
+    novotelImages.forEach((img, idx) => img.style.display = idx === currentNovotelIndex ? 'block' : 'none');
+}
+
+function changeNovotelSlide(step) {
+    showNovotelSlide(currentNovotelIndex + step);
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     showMobilySlide(currentMobilyIndex);
@@ -298,4 +327,5 @@ document.addEventListener('DOMContentLoaded', () => {
     showDiplomaSlide(currentDiplomaIndex);
     showLagunaSlide(currentLagunaIndex);
     showAbattaSlide(currentAbattaIndex);
+    showNovotelSlide(currentNovotelIndex);
 });
